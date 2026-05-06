@@ -22,5 +22,5 @@ def pad_sequences(seqs, pad_value=0, max_len=None):
 
         data_to_copy = seq[:l_target]
         result[i, :len(data_to_copy)] = data_to_copy
-
+        #result[i, -len(data_to_copy):] = data_to_copy #pre
     return result
